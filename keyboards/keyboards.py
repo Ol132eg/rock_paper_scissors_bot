@@ -1,4 +1,4 @@
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton,ReplyKeyboardRemove
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
 
 from lexicon.lexicon_ru import LEXICON_RU
@@ -36,3 +36,4 @@ game_kb = ReplyKeyboardMarkup(
               [button_3]],
     resize_keyboard=True
 )
+#reply_markup=ReplyKeyboardRemove() #удаляем  кнопки (когда они висят при запуске бота с другой логикой)
